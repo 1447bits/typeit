@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>TypeiT</title>
+</head>
+
+<body>
+    <div class="hidden">
+        <h1>Site is not responsive Yet</h1>
+    </div>
+    <section id="main">
+        <div id="title">
+            <h3>Just Another Notepad</h3>
+            <span>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/1077/1077063.png" alt=""></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2951/2951141.png" alt=""></a>
+            </span>
+        </div>
+        <div id="options">
+            <label for="font_size">
+                font size
+                <input id="font_size" name="font_size" type="number">
+            </label>
+            <label for="font_color">
+                font color
+                <input type="color" name="font_color" id="font_color">
+            </label>
+            <label for="copyToClipboard">
+                <button id="copyToClipboard">copy to clipboard</button>
+            </label>
+            <label for="clear">
+                <button id="clear">clear</button>
+            </label>
+        </div>
+        <div id="display">
+            <textarea name="display" id="textarea"></textarea>
+        </div>
+        <div id="keyBoard">
+            <div id="numRow">
+                <!-- <span class="key" id="num">num</span> -->
+            </div>
+            <div id="qwerty">
+                <!-- <span class="key" id="alph">alph</span> -->
+            </div>
+            <div id="asdfg">
+                <!-- <span class="key" id="alph">alph</span> -->
+            </div>
+            <div id="zxcvb">
+                <!-- <span class="key" id="alph">alph</span> -->
+            </div>
+            <div id="bottomKeys">
+                <!-- <span class="key" id="alph">alph</span> -->
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./index.js"></script>
+
+</html>

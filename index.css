@@ -1,0 +1,120 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border:black 1px solid; */
+}
+.hidden {
+    display: none;
+}
+#main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-inline: auto;
+    margin-top: 2em;
+    width: 95%;
+    background-color: #fafafa;
+    color: #252525;
+    padding: 1em;
+    gap: 2em;
+}
+#title {
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    all: unset;
+}
+#title span {
+    display: flex;
+    gap: 1em;
+}
+#title img {
+    width: 1.1em;
+}
+#options {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+#options label {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 1em;
+}
+#options input {
+    all: unset;
+    width: 3em;
+}
+#copyToClipboard {
+    all: unset;
+    background: rgb(120, 146, 225);
+    color: white;
+    padding-inline: 1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+#clear {
+    all: unset;
+    background: rgb(255, 84, 84);
+    color: white;
+    padding-inline: 1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+#display {
+    margin-inline: auto;
+}
+#textarea {
+    width: 25em;
+    margin: auto;
+    height: 5em;
+    font-size: 1.5em;
+    padding: 0.5em;
+    border:1px solid black;
+}
+#keyBoard {
+    /* width: calc(100% - 2em); */
+    /* width: 90%; */
+    margin-inline: auto;
+}
+#numRow, #qwerty, #asdfg, #zxcvb, #bottomKeys {
+    display: flex;
+    justify-content: center;
+}
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 3px;
+    margin: 0.2em;
+    min-width: 2em;
+    height: 2em;
+    padding-inline: 0.5em;
+    border-radius: 0.7em;
+    border: inset 0.5px rgba(65, 80, 128, 0.3);
+    box-shadow: 1px 1px 3px rgba(90, 86, 216, 0.085);
+    background: white;
+}
+#Space {
+    width: 25em;
+}
+#Enter,#Shift {
+    width: 8em;
+}
+
+
+@media only screen and (max-width: 650px) {
+    #main {
+        display: none;
+    }
+    .hidden {
+        display: block;
+    }
+}
