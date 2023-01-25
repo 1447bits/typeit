@@ -3,6 +3,8 @@ const qwerty = document.getElementById("qwerty");
 const asdfg = document.getElementById("asdfg");
 const zxcvb = document.getElementById("zxcvb");
 const bottomKeys = document.getElementById("bottomKeys");
+const font_size = document.getElementById("font_size")
+font_size.value = "20"
 
 const keyArray = ["\`", '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', 'Backspace',
     'Tab', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', '[', ']', '\\',
@@ -16,7 +18,6 @@ const shiftKeys = ["\`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", 
     'Control', 'Alt', 'Space', 'Alt', 'Control']
 
 // set keyboard function
-
 function dispKeyBoard() {
 
     for (let i = 0; i <= 13; i++) {
@@ -53,7 +54,7 @@ dispKeyBoard()
 // highlight key onkeyDown event
 let prevKey = document.getElementById("Space")
 let currKey
-document.onkeydown = (key) => {
+document.getElementById("textarea").onkeydown = (key) => {
     prevKey.style.background = "white"
     key = (key || window.event)
 
@@ -61,7 +62,7 @@ document.onkeydown = (key) => {
     if (indx == -1) {
         indx = shiftKeys.indexOf(key.key)
         if (indx == -1 ) {
-            indx = 0
+            return
         }
     }
     if (key.key === " ") {

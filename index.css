@@ -26,6 +26,10 @@
 }
 a {
     all: unset;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #title span {
     display: flex;
@@ -47,7 +51,9 @@ a {
 }
 #options input {
     all: unset;
-    width: 3em;
+    width: 4em;
+    box-shadow: 2px 2px 5px rgba(171, 171, 171, 0.364);
+
 }
 #copyToClipboard {
     all: unset;
@@ -71,9 +77,9 @@ a {
     margin-inline: auto;
 }
 #textarea {
-    width: 25em;
+    width: 50rem;
     margin: auto;
-    height: 5em;
+    height: 10rem;
     font-size: 1.5em;
     padding: 0.5em;
     border:1px solid black;
