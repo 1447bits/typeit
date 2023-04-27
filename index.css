@@ -1,13 +1,20 @@
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     /* border:black 1px solid; */
 }
+
 .hidden {
     display: none;
+    text-align: center;
+    margin-top: 15vh;
+    background: -webkit-linear-gradient(#2d45b0, #3e95ba);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 #main {
     display: flex;
     justify-content: center;
@@ -15,15 +22,17 @@
     margin-inline: auto;
     margin-top: 2em;
     width: 95%;
-    background-color: #fafafa;
+    background: #fafafa;
     color: #252525;
-    padding: 1em;
+    padding: 1em 2em 5em 2em;
     gap: 2em;
 }
+
 #title {
     display: flex;
     justify-content: space-between;
 }
+
 a {
     all: unset;
     cursor: pointer;
@@ -31,30 +40,36 @@ a {
     justify-content: center;
     align-items: center;
 }
+
 #title span {
     display: flex;
     gap: 1em;
 }
+
 #title img {
     width: 1.1em;
 }
+
 #options {
     display: flex;
     gap: 2em;
     flex-wrap: wrap;
 }
+
 #options label {
     display: flex;
     justify-content: center;
     justify-items: center;
     gap: 1em;
 }
+
 #options input {
     all: unset;
     width: 4em;
     box-shadow: 2px 2px 5px rgba(171, 171, 171, 0.364);
 
 }
+
 #copyToClipboard {
     all: unset;
     background: rgb(120, 146, 225);
@@ -76,23 +91,32 @@ a {
 #display {
     margin-inline: auto;
 }
+
 #textarea {
     width: 50rem;
+    max-width: 100%;
     margin: auto;
     height: 10rem;
     font-size: 1.5em;
     padding: 0.5em;
-    border:1px solid black;
+    border: 1px solid black;
 }
+
 #keyBoard {
     /* width: calc(100% - 2em); */
     /* width: 90%; */
     margin-inline: auto;
 }
-#numRow, #qwerty, #asdfg, #zxcvb, #bottomKeys {
+
+#numRow,
+#qwerty,
+#asdfg,
+#zxcvb,
+#bottomKeys {
     display: flex;
     justify-content: center;
 }
+
 .key {
     display: flex;
     justify-content: center;
@@ -106,12 +130,15 @@ a {
     border-radius: 0.7em;
     border: inset 0.5px rgba(65, 80, 128, 0.3);
     box-shadow: 1px 1px 3px rgba(90, 86, 216, 0.085);
-    background: white;
+    /* background: rgb(72, 71, 71); */
 }
+
 #Space {
-    width: 25em;
+    width: 23em;
 }
-#Enter,#Shift {
+
+#Enter,
+#Shift {
     width: 8em;
 }
 
@@ -120,6 +147,7 @@ a {
     #main {
         display: none;
     }
+
     .hidden {
         display: block;
     }
