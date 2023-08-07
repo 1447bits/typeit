@@ -56,7 +56,7 @@ let prevKey = document.getElementById("Space")
 let currKey
 
 document.getElementById("textarea").onkeydown = (key) => {
-    prevKey.style.background = "white"
+    prevKey.style.background = "transparent"
     key = (key || window.event)
 
     let indx = keyArray.indexOf(key.key)
@@ -73,7 +73,7 @@ document.getElementById("textarea").onkeydown = (key) => {
     }
 
     currKey = document.getElementById(keyArray[indx])
-    currKey.style.background = "#9caad9"
+    currKey.style.background = "#ad96c1"
     prevKey = currKey
 };
 

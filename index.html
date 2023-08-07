@@ -10,9 +10,8 @@
 </head>
 
 <body>
-    <div class="hidden responsive">
-        <h1>Site is not responsive Yet</h1>
-        <h1>Sorry for the inconvenience :( </h1>
+    <div class="responsive">
+        <h1>Site is not available for smaller displays</h1>
     </div>
     <section id="main">
         <div id="title">
@@ -23,12 +22,12 @@
             </span>
         </div>
         <div id="options">
-            <label for="font_size">
-                font size (px)
+            <label for="font_size" id="font_size-lable">
+                Font size (px)
                 <input id="font_size" name="font_size" type="number">
             </label>
-            <label for="font_color">
-                font color
+            <label for="font_color" id="font_color-lable">
+                Font color
                 <input type="color" name="font_color" id="font_color">
             </label>
             <label for="copyToClipboard">
@@ -37,9 +36,12 @@
             <label for="clear">
                 <button id="clear">clear</button>
             </label>
+            <label for="download">
+                <button id="download">Download</button>
+            </label>
         </div>
         <div id="display">
-            <textarea name="display" id="textarea" placeholder="what's in your Thoughts Today"></textarea>
+            <textarea name="display" id="textarea" placeholder="Best place to jot down your thoughts :)"></textarea>
         </div>
         <div id="keyBoard">
             <div id="numRow">
