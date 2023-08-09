@@ -21,7 +21,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: linear-gradient(to right, #b9babc, #d9dce5, #a2a6b5);
+    background: linear-gradient(to bottom, #e3e5ed85, #f5f7ff, #dbe2f5);
 }
 
 #main::-webkit-scrollbar {
